@@ -1,0 +1,32 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Clear console",
+            "type": "shell",
+            "command": "cls",
+            "identifier": "clear",
+        },
+        {
+            "label": "Run Tests",
+            "type": "shell",
+            "command": "npm",
+            "dependsOn": "clear",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "args": [
+                "test"
+            ],
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+            }
+        }
+    ]
+}
