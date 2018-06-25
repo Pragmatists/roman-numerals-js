@@ -1,3 +1,3 @@
-module.exports.convert = function () {
-    return ""
+exports.convert = function () {
+    return "1"
 };
